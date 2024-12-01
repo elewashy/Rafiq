@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ar">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <meta name="description" content="">
+        <meta name="author" content="Naem Azam">
+
+        <title>رِفْق - معاك في كل خطوة</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="/css/owl.carousel.min.css" rel="stylesheet">
+
+        <link href="/css/owl.theme.default.min.css" rel="stylesheet">
+
+        <link href="/css/dp.css" rel="stylesheet">
+
+    </head>
+    
+    <body id="top">
+    
+        <main>
+
+            <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
+                <div class="container">
+                    <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+                        رِفْق
+                        <strong class="d-block">معاك في كل خطوة</strong>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">تسجيل</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/#contact">تواصل معنا</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/checklist.html">مهامي</a>
+                            </li>   
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/chat/chat.html">رفيقي</a>
+                            </li>
+                            <a class="navbar-brand d-none d-lg-block" href="/">
+                                رِفْق                               
+                                <strong class="d-block">معاك في كل خطوة</strong>
+                            </a>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/#reviews">احجز جلستك بسهولة</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/#about">من نحن</a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/#hero">الصفحة الرئيسية</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+                <style>
+                    /* General Reset */
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        font-family: 'Arial', sans-serif;
+                    }
+            
+                    /* Container */
+                    .checklist-container {
+                        padding: 30px;
+                        border-radius: 12px;
+                        max-width: 2000px;
+                        margin: 50px auto;
+                        text-align: center;
+                    }
+            
+            
+                    /* Checklist */
+                    .checklist {
+                        list-style: none;
+                        padding: 0;
+                        margin: 20px 0;
+                    }
+            
+                    .checklist li {
+                        display: flex;
+                        align-items: center;
+                        padding: 10px 15px;
+                        margin-bottom: 10px;
+                        background: #fff;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        transition: transform 0.2s ease;
+                    }
+            
+                    .checklist li:hover {
+                        transform: translateY(-3px);
+                    }
+            
+                    input[type="checkbox"] {
+                        margin-right: 12px;
+                        transform: scale(1.3);
+                        accent-color: #00c4cc;
+                    }
+            
+                    label {
+                        font-size: 18px;
+                        color: #555;
+                        flex: 1;
+                        transition: opacity 0.3s ease;
+                    }
+            
+                    /* Completed Task Style */
+                    .completed {
+                        text-decoration: line-through;
+                        opacity: 0.6;
+                        background-color: #e0e0e0;
+                    }
+            
+                    .completed-label {
+                        color: #888;
+                    }
+            
+
+                    /* Add Task Button */
+                    .add-task-btn {
+                        background: linear-gradient(45deg, #00c4cc, #0078ff);
+                        color: #fff;
+                        border: none;
+                        padding: 12px 20px;
+                        border-radius: 8px;
+                        font-size: 16px;
+                        cursor: pointer;
+                        transition: background 0.3s ease, transform 0.2s ease;
+                    }
+            
+                    .add-task-btn:hover {
+                        background: linear-gradient(45deg, #0078ff, #00c4cc);
+                        transform: translateY(-2px);
+                    }
+                </style>
+    <div class="checklist-container">
+        <h2 class="text-center mb-lg-3 mb-2" style="position: relative; top: -60px;    padding: 5px 100px; 
+        border: 5px solid #4E73DF; 
+        background: radial-gradient(circle, #6a89cc, #4E73DF); 
+        color: white; 
+        font-family: 'Arial', sans-serif; 
+        display: inline-block; 
+        border-radius: 50px; 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+        text-transform: uppercase; ">مَهَامِي</h2>
+        <ul class="checklist">
+            <li>
+                <input type="checkbox" id="task1">
+                <label for="task1">كل يوم، حاول تسجيل ثلاث مشاعر شعرت بها خلال اليوم. حدد المواقف التي تسببت في هذه المشاعر.                </label>
+            </li>
+            <li>
+                <input type="checkbox" id="task2">
+                <label for="task2">خصص 10 دقائق كل يوم للتأمل في مكان هادئ. حاول التركيز على تنفسك والشعور بالسلام الداخلي.                </label>
+            </li>
+            <li>
+                <input type="checkbox" id="task3">
+                <label for="task3">حاول الاتصال أو التفاعل مع شخص واحد على الأقل في هذا الأسبوع. اختر شخصًا تشعر بالراحة معه.                </label>
+            </li>
+            <li>
+                <input type="checkbox" id="task4">
+                <label for="task4">مارس رياضة خفيفة مثل المشي أو التمرين لمدة 30 دقيقة يوميًا.</label>
+            </li>
+        </ul>
+        <div class="celebration"></div>
+    </div>
+    <script>
+        // Add event listeners to checkboxes to mark tasks as completed
+        document.querySelectorAll('.checklist input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                const taskLabel = checkbox.nextElementSibling;
+                if (checkbox.checked) {
+                    taskLabel.classList.add('completed');
+                    taskLabel.classList.add('completed-label');
+                } else {
+                    taskLabel.classList.remove('completed');
+                    taskLabel.classList.remove('completed-label');
+                }
+                checkCompletion();
+            });
+        });
+
+    </script>
+
+</section>
+<div class="chat-icon" onclick="redirectToChat()">
+    <i class="fas fa-comments"></i>
+</div>
+<style>.chat-icon {
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 60px;
+height: 60px;
+background: linear-gradient(135deg, #701b6f, #f207fe82);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chat-icon:hover {
+transform: scale(1.1);
+box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-icon i {
+color: white;
+font-size: 24px;
+}
+</style>         
+<script>function redirectToChat() {
+window.location.href = "/chat/chat.html"; // استبدل بالرابط الذي تريده
+}
+</script>   
+
+        </main>
+
+        <footer class="site-footer section-padding" id="contact">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-lg-2 col-md-6 col-12 my-4 my-lg-0">
+                        <h5 class="mb-lg-4 mb-9">
+                            رِفْق 
+                            <img src="/images/reviews/logo.png" alt="Logo" style="width: +80px; height: auto; margin-left: 10px;" />
+                          </h5>
+                          
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 ms-auto">
+                        <h5 class="mb-lg-4 mb-9">وسائل التواصل</h5>
+
+                        <ul class="social-icon">
+                            <li><a href="https://www.facebook.com" class="social-icon-link bi-facebook" target="_blank"></a></li>
+                            <li><a href="https://www.linkedin.com" class="social-icon-link bi-linkedin" target="_blank"></a></li>
+                            <li><a href="https://twitter.com" class="social-icon-link bi-twitter" target="_blank"></a></li>
+                            <li><a href="https://www.instagram.com" class="social-icon-link bi-instagram" target="_blank"></a></li>
+                                                      <p class="copyright-text">Copyright © EngiCoders 
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-12 ms-auto mt-4 mt-lg-0">
+                    </div>
+
+                </div>
+            </section>
+        </footer>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/owl.carousel.min.js"></script>
+        <script src="/js/scrollspy.min.js"></script>
+        <script src="/js/custom.js"></script>
+
+    </body>
+</html>

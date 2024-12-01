@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ar">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="Naem Azam">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+        <title>رِفْق - معاك في كل خطوة</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="/css/owl.carousel.min.css" rel="stylesheet">
+
+        <link href="/css/owl.theme.default.min.css" rel="stylesheet">
+
+        <link href="/css/dp.css" rel="stylesheet">
+
+    </head>
+    
+    <body id="top">
+    
+        <main>
+
+            <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
+                <div class="container">
+                    <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+                        رِفْق
+                        <strong class="d-block">معاك في كل خطوة  </strong>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">تسجيل</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">تواصل معنا</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/checklist.html">مهامي</a>
+                            </li>   
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/chat/chat.html">رفيقي</a>
+                            </li>
+                            <a class="navbar-brand d-none d-lg-block" href="/">
+                                رِفْق                               
+                                <strong class="d-block">معاك في كل خطوة</strong>
+                            </a>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#reviews">احجز جلستك بسهولة</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">من نحن</a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#hero">الصفحة الرئيسية</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+            <section class="hero" id="hero">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/slider/2.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="images/slider/young-asian-female-dentist-white-coat-posing-clinic-equipment.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="images/slider/1.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="heroText d-flex flex-column justify-content-center">
+
+                                <h1 class="mt-auto mb-2">
+                                    نفسيتك
+                                    <div class="animated-info">
+                                        <span class="animated-item">أولويتنا</span>
+                                        <span class="animated-item">مهمتنا</span>
+                                        <span class="animated-item">أولويتنا</span>
+                                    </div>
+                                </h1>
+
+                                <p class="mb-4">مرحبًا بك في مساحتك الآمنة، حيث نؤمن أن لكل شخص الحق في الدعم والراحة النفسية. نحن هنا لنساعدك على إيجاد افضل الحلول لمشاكلك. لست وحدك، نحن هنا معك في كل خطوة.</p>
+
+                                <!-- <div class="heroLinks d-flex flex-wrap align-items-center">
+                                    <a class="custom-link me-4" href="#about" data-hover="Learn More">المزيد</a>
+
+                                    <p class="contact-phone mb-0"><i class="bi-phone"></i> 010-020-0340</p>
+                                </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="chat-icon" onclick="redirectToChat()">
+                <i class="fas fa-comments"></i>
+            </div>
+<style>.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #701b6f, #f207fe82);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chat-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-icon i {
+    color: white;
+    font-size: 24px;
+}
+</style>         
+<script>function redirectToChat() {
+    window.location.href = "/chat/chat.html"; // استبدل بالرابط الذي تريده
+}
+</script>   
+            <section class="section-padding" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-5 col-12 mx-auto">
+                            <div class="featured-circle bg-white shadow-lg d-flex justify-content-center align-items-center">
+                                <p class="featured-text">
+                                    <span class="featured-number">
+                                      <img src="/images/reviews/logo.png" alt="Image description" style="width: 300px; height: auto;" />
+                                    </span> 
+                                    <br>
+                                  </p>
+                                                              </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-13">
+                            <h2 class="mb-lg-3 mb-3">أهلاً، نحن فريق EngiCoders.</h2>
+
+                            <p class="mb-4">إحنا فريق EngiCoders، فريق مخصص وشغوف بإنشاء حلول لها تأثير إيجابي. مشروعنا هو موقع إلكتروني يركز على الصحة النفسية، بهدف دعم الأفراد والعائلات اللي بيواجهوا تحديات زي التوحد وغيره من الاضطرابات النفسية.                            </p>
+
+                            <p class="mb-4">من خلال منصتنا، بنوفر موارد، وإرشادات من خبراء، ودعم مجتمعي لضمان إن كل شخص يقدر يلاقي المساعدة اللي محتاجها. رسالتنا هي إنشاء عالم يكون فيه الصحة النفسية مفهومة ومدعومة وذات قيمة للجميع.
+
+                                في EngiCoders، بنؤمن بقوة التكنولوجيا في تحسين الحياة، وملتزمين ببناء أدوات تعزز الأمل والتفاهم والسعادة. <a rel="nofollow" href="#contact" target="_blank">تواصل معنا</a></p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+            <section class="section-padding pb-0" id="reviews">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <h2 class="text-center mb-lg-5 mb-4">"جمعنا لك الأفضل"</h2>
+
+                            <div class="owl-carousel reviews-carousel">
+
+                                <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
+                                    <div class="reviews-stars">
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star"></i>
+                                    </div>
+
+                                    <p class="text-primary d-block mt-2 mb-0 w-100"><strong>أخصائية علاج نفسي</strong></p>
+
+                                    <p class="reviews-text w-100">أقدم جلسات علاج فردية وجماعية لمساعدة الأفراد في التعامل مع التوتر، القلق، والاكتئاب، باستخدام تقنيات حديثة مثل العلاج المعرفي السلوكي (CBT).                                    </p>
+
+                                    <img src="images/reviews/4.jpg" class="img-fluid reviews-image" alt="">
+
+                                    <figcaption class="ms-4">
+                                        <strong>د. سارة العفيفي </strong>
+
+                                        <span class="text-muted">250 ج  / جلسة</span>
+                                    </figcaption>
+                                </figure>
+
+                                <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
+                                    <div class="reviews-stars">
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star"></i>
+                                    </div>
+
+                                    <p class="text-primary d-block mt-2 mb-0 w-100"><strong>متخصص في تحليل السلوك التطبيقي (ABA).</strong></p>
+
+                                    <p class="reviews-text w-100">أنا متخصص في تحليل السلوك التطبيقي (ABA)، يساعد الأطفال المصابين بالتوحد على تحسين مهاراتهم السلوكية والاجتماعية من خلال خطط علاجية مخصصة.</p>
+
+                                    <img src="images/reviews/1.png" class="img-fluid reviews-image" alt="">
+
+                                    <figcaption class="ms-4">
+                                        <strong>د. أحمد الشناوي</strong>
+
+                                        <span class="text-muted">200 ج  / جلسة</span>
+                                    </figcaption>
+                                </figure>
+
+                                <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
+                                    <div class="reviews-stars">
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                    </div>
+
+                                    <p class="text-primary d-block mt-2 mb-0 w-100"><strong>معالجة نفسية للأطفال والمراهقين.</strong></p>
+
+                                    <p class="reviews-text w-100">أنا معالجة نفسية للأطفال والمراهقين، تقدم دعمًا نفسيًا متخصصًا لمساعدة الشباب على مواجهة تحديات النمو مثل التوحد واضطرابات القلق.</p>
+
+                                    <img src="images/reviews/3.jpg" class="img-fluid reviews-image" alt="">
+
+                                    <figcaption class="ms-4">
+                                        <strong>د. ليلى الحسيني</strong>
+
+                                        <span class="text-muted">300 ج  / جلسة</span>
+                                    </figcaption>
+                                </figure>
+
+                                <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
+                                    <div class="reviews-stars">
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star"></i>
+                                        <i class="bi-star"></i>
+                                    </div>
+
+                                    <p class="text-primary d-block mt-2 mb-0 w-100"><strong>أخصائية علاج سلوكي جدلي (DBT).                                    </strong></p>
+
+                                    <p class="reviews-text w-100">أستخدم تقنيات علاجية تساعد الأفراد في تنظيم مشاعرهم، تحسين مهارات التأقلم، والتعامل مع التحديات النفسية مثل اضطراب الشخصية الحدية.
+                                    </p>
+
+                                    <img src="images/reviews/2.jpg" class="img-fluid reviews-image" alt="">
+
+                                    <figcaption class="ms-4">
+                                        <strong>د. ناديا المصري</strong>
+
+                                        <span class="text-muted">350 ج  / جلسة</span>
+                                    </figcaption>
+                                </figure>
+                               
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+        <footer class="site-footer section-padding" id="contact">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-lg-2 col-md-6 col-12 my-4 my-lg-0">
+                        <h5 class="mb-lg-4 mb-9">
+                            رِفْق 
+                            <img src="/images/reviews/logo.png" alt="Logo" style="width: +80px; height: auto; margin-left: 10px;" />
+                          </h5>
+                          
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 ms-auto">
+                        <h5 class="mb-lg-4 mb-9">وسائل التواصل</h5>
+
+                        <ul class="social-icon">
+                            <li><a href="https://www.facebook.com" class="social-icon-link bi-facebook" target="_blank"></a></li>
+                            <li><a href="https://www.linkedin.com" class="social-icon-link bi-linkedin" target="_blank"></a></li>
+                            <li><a href="https://twitter.com" class="social-icon-link bi-twitter" target="_blank"></a></li>
+                            <li><a href="https://www.instagram.com" class="social-icon-link bi-instagram" target="_blank"></a></li>
+                                                      <p class="copyright-text">Copyright © EngiCoders 
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-12 ms-auto mt-4 mt-lg-0">
+                    </div>
+
+                </div>
+            </section>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/owl.carousel.min.js"></script>
+        <script src="/js/scrollspy.min.js"></script>
+        <script src="/js/custom.js"></script>
+
+    </body>
+</html>
