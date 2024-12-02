@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ar">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="Naem Azam">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+        <title>رِفْق - معاك في كل خطوة</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="/css/owl.carousel.min.css" rel="stylesheet">
+
+        <link href="/css/owl.theme.default.min.css" rel="stylesheet">
+
+        <link href="/css/dp.css" rel="stylesheet">
+        <link rel="icon" href="/images/slider/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="/images/slider/favicon.ico" sizes="192x192" />
+        <link rel="apple-touch-icon" href="/images/slider/favicon.ico" />
+
+    </head>
+    
+    <body id="top">
+    
+        <main>
+
+            <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
+                <div class="container">
+                    <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+                        رِفْق
+                        <strong class="d-block">معاك في كل خطوة  </strong>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/login.html">تسجيل الدخول</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/#contact">تواصل معنا</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/checklist.html">مهامي</a>
+                            </li>   
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/chat/chat.html">رفيقي</a>
+                            </li>
+                            <a class="navbar-brand d-none d-lg-block" href="/">
+                                رِفْق                               
+                                <strong class="d-block">معاك في كل خطوة</strong>
+                            </a>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/#reviews">احجز جلستك بسهولة</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/#about">من نحن</a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/#hero">الصفحة الرئيسية</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+            <div class="chat-icon" onclick="redirectToChat()">
+                <i class="fas fa-comments"></i>
+            </div>
+<style>.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #701b6f, #f207fe82);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chat-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-icon i {
+    color: white;
+    font-size: 24px;
+}
+</style>         
+<script>function redirectToChat() {
+    window.location.href = "/chat/chat.html"; // استبدل بالرابط الذي تريده
+}
+</script>   
+<section class="section-padding" id="booking">
+    <div class="container">
+        <div class="row">
+        
+            <div class="col-lg-8 col-12 mx-auto">
+                <div class="booking-form">
+                    
+                    <h2 class="text-center mb-lg-3 mb-2">تسجيل مستخدم جديد</h2>
+                
+                    <form role="form" action="#signup" method="post">
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <input 
+                                    type="text" 
+                                    name="full_name" 
+                                    id="full_name" 
+                                    class="form-control" 
+                                    placeholder="الاسم كامل" 
+                                    required 
+                                    pattern="[\u0621-\u064A\s]+" 
+                                    title="الاسم يجب أن يكون باللغة العربية فقط">
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <input 
+                                    type="text" 
+                                    name="username" 
+                                    id="username" 
+                                    class="form-control" 
+                                    placeholder="اسم المستخدم (باللغة الإنجليزية)" 
+                                    required 
+                                    pattern="[a-zA-Z0-9]+" 
+                                    title="اسم المستخدم يجب أن يحتوي على حروف وأرقام إنجليزية فقط">
+                            </div>
+                        
+                            <div class="col-lg-6 col-12">
+                                <input 
+                                    type="email" 
+                                    name="email" 
+                                    id="email" 
+                                    class="form-control" 
+                                    placeholder="البريد الإلكتروني" 
+                                    required>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <input 
+                                    type="password" 
+                                    name="password" 
+                                    id="password" 
+                                    class="form-control" 
+                                    placeholder="كلمة المرور (8 أحرف على الأقل)" 
+                                    required 
+                                    minlength="8"
+                                    title="كلمة المرور يجب أن تكون 8 أحرف على الأقل">
+                            </div>
+                        
+                            <div class="col-lg-6 col-12">
+                                <input 
+                                    type="tel" 
+                                    name="phone" 
+                                    id="phone" 
+                                    pattern="[0-9]{11}" 
+                                    class="form-control" 
+                                    placeholder="رقم الهاتف: 0123456789" 
+                                    required>
+                            </div>
+                        
+                            <div class="col-lg-6 col-12">
+                                <input 
+                                    type="date" 
+                                    name="birthdate" 
+                                    id="birthdate" 
+                                    class="form-control" 
+                                    placeholder="تاريخ الميلاد">
+                            </div>
+                        
+                            <div class="col-lg-3 col-md-4 col-6 mx-auto">
+                                <button 
+                                    type="submit" 
+                                    class="form-control btn btn-primary" 
+                                    id="submit-button">التسجيل الآن</button>
+                            </div>
+                        </div>
+                                                    <p class="mb-4 text-center">
+                                لدي حساب بالفعل !
+                                <a href="/login.html" class="text-primary">تسجيل الدخول</a>
+                              </p>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+        </main>
+
+        <footer class="site-footer section-padding" id="contact">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-lg-2 col-md-6 col-12 my-4 my-lg-0">
+                        <h5 class="mb-lg-4 mb-9">
+                            رِفْق 
+                            <img src="/images/reviews/logo.png" alt="Logo" style="width: +80px; height: auto; margin-left: 10px;" />
+                          </h5>
+                          
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 ms-auto">
+                        <h5 class="mb-lg-4 mb-9">وسائل التواصل</h5>
+
+                        <ul class="social-icon">
+                            <li><a href="https://www.facebook.com" class="social-icon-link bi-facebook" target="_blank"></a></li>
+                            <li><a href="https://www.linkedin.com" class="social-icon-link bi-linkedin" target="_blank"></a></li>
+                            <li><a href="https://twitter.com" class="social-icon-link bi-twitter" target="_blank"></a></li>
+                            <li><a href="https://www.instagram.com" class="social-icon-link bi-instagram" target="_blank"></a></li>
+                                                      <p class="copyright-text">Copyright © EngiCoders 
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-12 ms-auto mt-4 mt-lg-0">
+                    </div>
+
+                </div>
+            </section>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/owl.carousel.min.js"></script>
+        <script src="/js/scrollspy.min.js"></script>
+        <script src="/js/custom.js"></script>
+
+    </body>
+</html>

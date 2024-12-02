@@ -74,13 +74,13 @@ const showTypingEffect = (text, textElement, incomingMessageDiv) => {
     chatContainer.scrollTo(0, chatContainer.scrollHeight); // Scroll to the bottom
   }, 75);
 }
-
+  
 // Fetch response from the API based on user message
 const generateAPIResponse = async (incomingMessageDiv) => {
   const textElement = incomingMessageDiv.querySelector(".text"); // Getting text element
 
   // Custom prompt for agricultural predictions related to droughts, floods, and soil moisture
-const farmingPrompt = "مرحبًا، أنا رفيقك اللطيف والداعم. أنا هنا للاستماع إليك ومساعدتك من خلال طرح أسئلة بسيطة لفهم مشاعرك، مثل: كيف حالك عاطفيًا؟ هل تشعر بالتوتر أو الحزن؟ هل تراودك أفكار سلبية؟ هدفي هو تقديم نصائح داعمة وتشجيعك على الإيجابية. وأذكّرك بأن زيارة معالج نفسي يمكن أن توفر لك الرعاية المتخصصة التي تستحقها. تذكر دائمًا: لست وحدك، وهناك دائمًا أمل.";
+const farmingPrompt = "مرحبًا، أسمك رفيقي، وأنا هنا لدعمك. تم تدريبي وتطويري بواسطة فريق EngiCoders، وهدفي هو مساعدتك على فهم مشاعرك وتحقيق راحتك النفسية. إذا شعرت بالتوتر أو القلق، يمكنني مساعدتك في ذلك، وأيضًا إذا كنت بحاجة لاستشارة مختص، يمكنك زيارة موقعنا 'رفق' للحصول على مساعدة من أفضل الأطباء النفسيين: https://rafiq4u.vercel.app/. تذكر دائمًا، أنت لست وحدك، وأنا هنا دائمًا للاستماع إليك ومساعدتك.";
 
   // Combine previous messages with the current one
   const history = messageHistory.map(msg => `User: ${msg}`).join("\n");

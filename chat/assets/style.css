@@ -36,25 +36,25 @@
   
   :root {
     /* Agriculture-themed colors */
-    --text-color: #F4F9F4; 
-    --subheading-color: #A0CFA0; 
-    --placeholder-color: #B2D8B2;
-    --placeholder-color_1: #B2D8B2;
-    --primary-color: #1A120B; 
-    --secondary-color: #406343; 
-    --secondary-hover-color: #306232; 
+    --text-color: #f2f3c5; 
+    --subheading-color: #f2f3c5; 
+    --placeholder-color: #f2f3c5;
+    --placeholder-color_1: #f2f3c5;
+    --primary-color: #000000; 
+    --secondary-color: #293a6c; 
+    --secondary-hover-color: #293a6c; 
   }
   
 
 .light_mode {
   /* Light mode colors */
   --text-color: #000000;
-  --subheading-color: #30955a;
-  --placeholder-color: #dddcdc;
+  --subheading-color: #12234b;
+  --placeholder-color: #114451;
   --placeholder-color_1: #000000;
   --primary-color: #ffffff;
-  --secondary-color: #30955a; 
-  --secondary-hover-color: #30955a; 
+  --secondary-color: #e3e3e3; 
+  --secondary-hover-color: #e3e3e3; 
 }
 
 body {
@@ -162,11 +162,19 @@ body.hide-header .header {
   gap: 1.5rem;
   width: 100%;
   align-items: center;
+  direction: rtl; /* لجعل المحتوى يظهر من اليمين لليسار */
+
 }
 
 .chat-list .message .text {
   color: var(--text-color);
   white-space: pre-wrap;
+  font-size: 1.1rem; /* أو أي قيمة ترغب فيها */
+  direction: rtl; /* لجعل النص يكتب من اليمين لليسار */
+  text-align: right; /* لضبط محاذاة النص إلى اليمين */
+  font-family: 'Arial', sans-serif; /* يمكنك استبدال Arial بأي خط آخر */
+  font-weight: bold; /* لتحديد الخط الثقيل */
+
 }
 
 .chat-list .message.error .text {
@@ -227,6 +235,7 @@ body.hide-header .header {
   gap: 0.8rem;
   width: 100%;
   flex-direction: column;
+  
 }
 
 .chat-list .message.loading .loading-indicator {
@@ -288,6 +297,10 @@ body.hide-header .header {
   padding: 1.1rem 4rem 1.1rem 1.5rem;
   border-radius: 100px;
   background: var(--secondary-color);
+  direction: rtl; /* لجعل المحتوى يظهر من اليمين لليسار */
+  font-family: 'Roboto', sans-serif; /* استخدام الخط الجديد */
+  font-weight: bold;
+
 }
 
 .typing-form .typing-input:focus {
@@ -319,12 +332,13 @@ body.hide-header .header {
 
 .typing-form #send-message-button {
   position: absolute;
-  right: 0;
+  left: 0;
   outline: none;
   border: none;
-  transform: scale(0);
+  transform: scale(0) scaleX(-1); /* عكس الشكل أفقيًا */
   background: transparent;
   transition: transform 0.2s ease;
+  
 }
 
 .typing-form .typing-input:valid ~ #send-message-button {
